@@ -1,11 +1,11 @@
 [
     {
-        "name": "",
+        "name": "Test",
         "selectedAllInGroup": true,
         "categories": [
             {
-                "name": "",
-                "key": ""
+                "name": "Demo",
+                "key": "{\"official\": \"5794f03dd7ced228f4419194\"}"
             }
         ]
     }

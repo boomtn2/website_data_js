@@ -1,4 +1,4 @@
-function detail(key, page) {
+function checkLogin(key, page) {
     let responseString = {
         url: BASE_URL + "tim-kiem/" + encodeURIComponent(key) + "/trang-" + page + ".html",
         page: page,

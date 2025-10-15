@@ -1,7 +1,7 @@
 async function genre() {
     try {
-        const categoriesResponse = await fetch("wiki/src/categories.json");
-        const fillsResponse = await fetch("wiki/src/fill.json");
+        const categoriesResponse = await fetch("https://raw.githubusercontent.com/boomtn2/website_data_js/main/wiki/src/categories.json");
+        const fillsResponse = await fetch("https://raw.githubusercontent.com/boomtn2/website_data_js/main/wiki/src/fill.json");
 
         const categories = await categoriesResponse.json();
         const fills = await fillsResponse.json();
