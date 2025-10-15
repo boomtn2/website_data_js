@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "name": "Wiki Dịch",
+        "version": 22,
+        "source": "https://truyenwikidich.net",
+        "regexp": "(www.)?(.*?)wiki(.*?)/truyen/[^/]+/?$",
+        "description": "Đọc truyện trên trang Wiki Dịch, review ở thông tin truyện",
+        "locale": "vi_VN",
+        "type": "novel"
+    },
+    "script": {
+        "home": "home.js",
+        "genre": "genre.js",
+        "detail": "detail.js",
+        "search": "search.js",
+        "chap": "chap.js",
+        "fill": "fill.js",
+        "next_page": "next_page.js"
+    },
+    "check_bot": {},
+    "config": {
+        "delay": 3000,
+        "login": true,
+        "auto_login": "auto_login.js",
+        "check_login": "check_login.js"
+    }
+}

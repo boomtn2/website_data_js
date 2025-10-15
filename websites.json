@@ -1,16 +1,20 @@
 [
     {
-        "name": "wiki",
-        "icon": "",
-        "detail": "",
+        "id": "wiki",
+        "name": "wikitruyendich",
+        "website": "https://truyenwikidich.net",
+        "icon": "wiki/icon.png",
+        "detail": "Wiki dịch - Truyện miễn phí hán việt.",
         "language": "vi",
-        "source": ""
+        "source": "",
+        "version": 1
     },
     {
         "name": "wiki",
         "icon": "",
         "detail": "",
         "language": "zh",
-        "source": ""
+        "source": "",
+        "version": 1
     }
 ]
