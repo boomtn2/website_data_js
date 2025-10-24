@@ -12,6 +12,8 @@ function modifyUrl(url, changes = {}) {
 
 
 function fill(url, key) {
-    let responseString = modifyUrl(url, key);
+    const obj = JSON.parse(key);
+
+    let responseString = modifyUrl(url, obj);
     sendToApp('response_json', buildJsonMessage('URL', ensureString(responseString), 'action'));
 }

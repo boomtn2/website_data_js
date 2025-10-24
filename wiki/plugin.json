@@ -17,11 +17,12 @@
         "fill": "fill.js",
         "next_page": "next_page.js"
     },
-    "check_bot": {},
     "config": {
         "delay": 3000,
         "login": true,
-        "auto_login": "auto_login.js",
-        "check_login": "check_login.js"
+        "js": [
+            "auto_login.js",
+            "check_login.js"
+        ]
     }
 }

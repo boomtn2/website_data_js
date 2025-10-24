@@ -1,14 +1,14 @@
 [
     {
         "name": "Đọc nhiều nhất",
-        "key": "{'so':'0'}"
+        "key": "{\"so\":\"0\"}"
     },
     {
         "name": "Rating cao nhất",
-        "key": "{'so':'2'}"
+        "key": "{\"so\":\"2\"}"
     },
     {
         "name": "Mới nhất",
-        "key": "{'so':'4'}"
+        "key": "{\"so\":\"4\"}"
     }
 ]

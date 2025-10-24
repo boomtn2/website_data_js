@@ -1,11 +1,463 @@
 [
     {
-        "name": "Test",
+        "name": "Trạng thái",
         "selectedAllInGroup": true,
         "categories": [
             {
-                "name": "Demo",
-                "key": "{\"official\": \"5794f03dd7ced228f4419194\"}"
+                "name": "Hoàn thành",
+                "key": "{\"tag\":\"5794f03dd7ced228f4419191\"}"
+            },
+            {
+                "name": "Còn tiếp",
+                "key": "{\"tag\":\"5794f03dd7ced228f4419192\"}"
+            },
+            {
+                "name": "Chưa xác minh",
+                "key": "{\"tag\":\"59c6a50112fb553750272b0a\"}"
+            },
+            {
+                "name": "Nguyên sang",
+                "key": "{\"tag\":\"5794f03dd7ced228f4419193\"}"
+            }
+        ]
+    },
+    {
+        "name": "Thể loại chính",
+        "selectedAllInGroup": true,
+        "categories": [
+            {
+                "name": "Tình cảm",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191a2\"}"
+            },
+            {
+                "name": "Tiên hiệp",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191a4\"}"
+            },
+            {
+                "name": "Huyền huyễn",
+                "key": "{\"tag\":\"57d17c94d7ced218fcd2734b\"}"
+            },
+            {
+                "name": "Khoa học viễn tưởng",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191a9\"}"
+            },
+            {
+                "name": "Võ hiệp",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191a3\"}"
+            },
+            {
+                "name": "Trinh thám",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191a7\"}"
+            },
+            {
+                "name": "Kinh dị",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191a6\"}"
+            },
+            {
+                "name": "Mạt thế",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191ac\"}"
+            },
+            {
+                "name": "Sinh tồn",
+                "key": "{\"tag\":\"5fd54e6523deea0a1a87e9b9\"}"
+            },
+            {
+                "name": "Quân sự",
+                "key": "{\"tag\":\"6785b91d23deea36d63efe7f\"}"
+            }
+        ]
+    },
+    {
+        "name": "Lĩnh vực",
+        "selectedAllInGroup": true,
+        "categories": [
+            {
+                "name": "Huyền học",
+                "key": "{\"tag\":\"58458dc2d7ced23af03679c5\"}"
+            },
+            {
+                "name": "Làm ruộng",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191c0\"}"
+            },
+            {
+                "name": "Y thuật",
+                "key": "{\"tag\":\"58458dc2d7ced23af03679c0\"}"
+            },
+            {
+                "name": "Mỹ thực",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191c5\"}"
+            },
+            {
+                "name": "Thể thao",
+                "key": "{\"tag\":\"58458dc2d7ced23af03679c3\"}"
+            },
+            {
+                "name": "Giới giải trí",
+                "key": "{\"tag\":\"5794f03ed7ced228f44191de\"}"
+            },
+            {
+                "name": "Phong thủy",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191bc\"}"
+            },
+            {
+                "name": "Phá án",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191c1\"}"
+            }
+        ]
+    },
+    {
+        "name": "Bối cảnh",
+        "selectedAllInGroup": true,
+        "categories": [
+            {
+                "name": "Dân quốc",
+                "key": "{\"tag\":\"5794f03ed7ced228f44191e6\"}"
+            },
+            {
+                "name": "Đô thị tình duyên",
+                "key": "{\"tag\":\"58d92bd6d7ced220e05d73c7\"}"
+            },
+            {
+                "name": "Hào môn thế gia",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191cf\"}"
+            },
+            {
+                "name": "Cung đình hầu tước",
+                "key": "{\"tag\":\"58458dc3d7ced23af03679cc\"}"
+            },
+            {
+                "name": "Vườn trường",
+                "key": "{\"tag\":\"5794f03ed7ced228f44191e3\"}"
+            },
+            {
+                "name": "Chức trường",
+                "key": "{\"tag\":\"6789ce1b23deea36d63efe98\"}"
+            },
+            {
+                "name": "Giang hồ ân oán",
+                "key": "{\"tag\":\"58458dc3d7ced23af03679d1\"}"
+            },
+            {
+                "name": "Niên đại văn",
+                "key": "{\"tag\":\"60f3ab4923deea4c3dfee6cf\"}"
+            }
+        ]
+    },
+    {
+        "name": "Thời đại",
+        "selectedAllInGroup": true,
+        "categories": [
+            {
+                "name": "Cổ đại",
+                "key": "{\"age\":\"5794f03dd7ced228f441919b\"}"
+            },
+            {
+                "name": "Cận đại",
+                "key": "{\"age\":\"5794f03dd7ced228f441919c\"}"
+            },
+            {
+                "name": "Hiện đại",
+                "key": "{\"age\":\"5794f03dd7ced228f441919d\"}"
+            },
+            {
+                "name": "Tương lai",
+                "key": "{\"age\":\"5794f03dd7ced228f441919e\"}"
+            }
+        ]
+    },
+    {
+        "name": "Giới tính",
+        "selectedAllInGroup": true,
+        "categories": [
+            {
+                "name": "Ngôn tình",
+                "key": "{\"gender\":\"5794f03dd7ced228f4419195\"}"
+            },
+            {
+                "name": "Đam mỹ",
+                "key": "{\"gender\":\"5794f03dd7ced228f4419197\"}"
+            },
+            {
+                "name": "Bách hợp",
+                "key": "{\"gender\":\"5794f03dd7ced228f4419198\"}"
+            },
+            {
+                "name": "Nữ tôn",
+                "key": "{\"gender\":\"5794f03dd7ced228f4419199\"}"
+            },
+            {
+                "name": "Không CP",
+                "key": "{\"gender\":\"5794f03dd7ced228f441919a\"}"
+            }
+        ]
+    },
+    {
+        "name": "Kết thúc",
+        "selectedAllInGroup": true,
+        "categories": [
+            {
+                "name": "HE",
+                "key": "{\"ending\":\"5794f03dd7ced228f441919f\"}"
+            },
+            {
+                "name": "SE",
+                "key": "{\"ending\":\"5794f03dd7ced228f44191a0\"}"
+            },
+            {
+                "name": "OE",
+                "key": "{\"ending\":\"5794f03dd7ced228f44191a1\"}"
+            }
+        ]
+    },
+    {
+        "name": "Thế giới",
+        "selectedAllInGroup": true,
+        "categories": [
+            {
+                "name": "Dị thế",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191ab\"}"
+            },
+            {
+                "name": "Thú nhân",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191b5\"}"
+            },
+            {
+                "name": "Tinh tế",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191c6\"}"
+            },
+            {
+                "name": "Nam nam thế giới",
+                "key": "{\"tag\":\"58458dc3d7ced23af03679db\"}"
+            },
+            {
+                "name": "Thế giới song song",
+                "key": "{\"tag\":\"58dfd0b1d7ced21780f3022f\"}"
+            },
+            {
+                "name": "Truyện cổ tích",
+                "key": "{\"tag\":\"614716cd23deea3cde83ddb7\"}"
+            }
+        ]
+    },
+    {
+        "name": "Thời không",
+        "selectedAllInGroup": true,
+        "categories": [
+            {
+                "name": "Xuyên việt",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191af\"}"
+            },
+            {
+                "name": "Xuyên thư",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191be\"}"
+            },
+            {
+                "name": "Xuyên game",
+                "key": "{\"tag\":\"606ee86623deea4c3dfee6ca\"}"
+            },
+            {
+                "name": "Xuyên nhanh",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191b9\"}"
+            },
+            {
+                "name": "Xuyên chậm",
+                "key": "{\"tag\":\"6147181423deea3cde83ddbe\"}"
+            },
+            {
+                "name": "Trọng sinh",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191b4\"}"
+            },
+            {
+                "name": "Hoán đổi linh hồn",
+                "key": "{\"tag\":\"58458dc3d7ced23af03679d6\"}"
+            }
+        ]
+    },
+    {
+        "name": "Năng lực",
+        "selectedAllInGroup": true,
+        "categories": [
+            {
+                "name": "Hệ thống",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191b6\"}"
+            },
+            {
+                "name": "Không gian",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191bb\"}"
+            },
+            {
+                "name": "Cẩm lý thể chất",
+                "key": "{\"tag\":\"5eb2b3ab23deea44d852c8c2\"}"
+            },
+            {
+                "name": "Thấu thị",
+                "key": "{\"tag\":\"60f94aff23deea4c3dfee6d0\"}"
+            },
+            {
+                "name": "Thôi miên",
+                "key": "{\"tag\":\"6731233f23deea071cb36c61\"}"
+            },
+            {
+                "name": "Đọc tâm",
+                "key": "{\"tag\":\"66c2f7f223deea071cb36c19\"}"
+            },
+            {
+                "name": "Ngôn linh",
+                "key": "{\"tag\":\"6785becc23deea36d63efe80\"}"
+            },
+            {
+                "name": "Đánh dấu",
+                "key": "{\"tag\":\"6785bee723deea36d63efe81\"}"
+            }
+        ]
+    },
+    {
+        "name": "Tính chất",
+        "selectedAllInGroup": true,
+        "categories": [
+            {
+                "name": "Ngọt sủng",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191b3\"}"
+            },
+            {
+                "name": "Nhẹ nhàng",
+                "key": "{\"tag\":\"58458dc3d7ced23af03679cf\"}"
+            },
+            {
+                "name": "Ấm áp",
+                "key": "{\"tag\":\"58d92bd7d7ced220e05d73d7\"}"
+            },
+            {
+                "name": "Hài hước",
+                "key": "{\"tag\":\"58458dc3d7ced23af03679d9\"}"
+            },
+            {
+                "name": "Cẩu huyết",
+                "key": "{\"tag\":\"5794f03dd7ced228f44191d1\"}"
+            },
+            {
+                "name": "Hắc ám",
+                "key": "{\"tag\":\"58458dc3d7ced23af03679d4\"}"
+            },
+            {
+                "name": "Sảng văn",
+                "key": "{\"tag\":\"58458dc3d7ced23af03679cd\"}"
+            },
+            {
+                "name": "Chữa lành",
+                "key": "{\"tag\":\"6032781123deea60925a9f2e\"}"
+            },
+            {
+                "name": "Quân văn",
+                "key": "{\"tag\":\"5794f03ed7ced228f44191df\"}"
+            }
+        ]
+    },
+    {
+        "name": "Nhân vật",
+        "selectedAllInGroup": true,
+        "categories": [
+            {
+                "name": "Thiên tài",
+                "key": "{\"tag\":\"6785c33223deea36d63efe90\"}"
+            },
+            {
+                "name": "Đại lão",
+                "key": "{\"tag\":\"673117e423deea071cb36c36\"}"
+            },
+            {
+                "name": "Học bá",
+                "key": "{\"tag\":\"5eb2b6c723deea44d852c8cb\"}"
+            },
+            {
+                "name": "Nữ cường",
+                "key": "{\"tag\":\"58e080fe12fb557dbfcdf1c5\"}"
+            },
+            {
+                "name": "Tra nam",
+                "key": "{\"tag\":\"5bc5d86d12fb5509f9333391\"}"
+            },
+            {
+                "name": "Tra nữ",
+                "key": "{\"tag\":\"606885fe23deea4c3dfee6c8\"}"
+            }
+        ]
+    },
+    {
+        "name": "Mối quan hệ",
+        "selectedAllInGroup": true,
+        "categories": [
+            {
+                "name": "Thanh mai trúc mã",
+                "key": "{\"tag\":\"5794f03ed7ced228f44191e8\"}"
+            },
+            {
+                "name": "Hoan hỉ oan gia",
+                "key": "{\"tag\":\"58458dc2d7ced23af03679bf\"}"
+            },
+            {
+                "name": "Cưới trước yêu sau",
+                "key": "{\"tag\":\"58458dc2d7ced23af03679c9\"}"
+            },
+            {
+                "name": "Lâu ngày sinh tình",
+                "key": "{\"tag\":\"67f0cd6623deea6af9481ce6\"}"
+            },
+            {
+                "name": "1v1",
+                "key": "{\"tag\":\"59a4867312fb557cb030fc60\"}"
+            },
+            {
+                "name": "Đoàn sủng",
+                "key": "{\"tag\":\"603277ea23deea60925a9f2d\"}"
+            }
+        ]
+    },
+    {
+        "name": "Góc nhìn",
+        "selectedAllInGroup": true,
+        "categories": [
+            {
+                "name": "Thị giác nam chủ",
+                "key": "{\"tag\":\"5bbd346e12fb5509f933338d\"}"
+            },
+            {
+                "name": "Thị giác nữ chủ",
+                "key": "{\"tag\":\"5bbd345e12fb5509f933338c\"}"
+            },
+            {
+                "name": "Ngôi thứ nhất",
+                "key": "{\"tag\":\"5bbd354912fb5509f933338e\"}"
+            },
+            {
+                "name": "Ngôi thứ hai",
+                "key": "{\"tag\":\"60a8069e23deea4c3dfee6ce\"}"
+            }
+        ]
+    },
+    {
+        "name": "Nghề nghiệp",
+        "selectedAllInGroup": true,
+        "categories": [
+            {
+                "name": "Làm ruộng",
+                "key": "{\"genre\":\"5794f03dd7ced228f44191b6\"}"
+            },
+            {
+                "name": "Huyền học",
+                "key": "{\"genre\":\"58458dc2d7ced23af03679c5\"}"
+            },
+            {
+                "name": "Y thuật",
+                "key": "{\"genre\":\"58458dc2d7ced23af03679c0\"}"
+            },
+            {
+                "name": "Bộ đội đặc chủng",
+                "key": "{\"tag\":\"5f4f230623deea0aedf36bc5\"}"
+            },
+            {
+                "name": "Pháp y",
+                "key": "{\"tag\":\"6732907423deea071cb36c7e\"}"
             }
         ]
     }
