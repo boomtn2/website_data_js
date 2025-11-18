@@ -1,0 +1,10 @@
+[
+    {
+        "js": "chap",
+        "title": "Lấy nội dung chương",
+        "timeOut": 0,
+        "skipError": false,
+        "canUserAction": false,
+        "type": "new_url"
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "js": "detail",
+        "title": "Lấy nội dung mô tả truyện",
+        "timeOut": 0,
+        "skipError": false,
+        "canUserAction": false,
+        "type": "new_url"
+    }
+]

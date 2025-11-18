@@ -1,9 +1,5 @@
-function getFullUrl(relativeUrl) {
-    return relativeUrl; // giữ nguyên đường dẫn tương đối
-}
 
-
-function chapter() {
+function run() {
     const chapterData = {};
 
     // Tiêu đề chương: phần tử p.book-title thứ 2 (nếu có)
@@ -43,9 +39,10 @@ function chapter() {
     ).singleNodeValue;
 
     chapterData.nextChapterUrl = nextChapterLinkElement
-        ? getFullUrl(nextChapterLinkElement.getAttribute('href'))
+        ? nextChapterLinkElement.getAttribute('href')
         : null;
 
-    const finalJsonData = JSON.stringify(chapterData);
-    sendToApp('response_json', buildJsonMessage('CHAPTER', finalJsonData, 'action'));
+
+    const jsonData = JSON.stringify(chapterData);
+    window.flutter_inappwebview.callHandler(NAME_RESPONSE_JS_CALL_HANDLER, jsonData);
 }

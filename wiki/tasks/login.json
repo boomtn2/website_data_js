@@ -1,0 +1,18 @@
+[
+    {
+        "js": "set_cookie",
+        "title": "Lấy cookie truyenwiki",
+        "timeOut": 0,
+        "skipError": false,
+        "canUserAction": false,
+        "type": "get_cache"
+    },
+    {
+        "js": "get_cookie",
+        "title": "Tạo mới cookie",
+        "timeOut": 0,
+        "skipError": false,
+        "canUserAction": false,
+        "type": "set_cache"
+    }
+]

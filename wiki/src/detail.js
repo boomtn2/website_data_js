@@ -1,62 +1,4 @@
-async function getBase64Image(imgUrl, maxWidth = 200, quality = 0.8) {
-    if (!imgUrl || imgUrl.includes('default-cover.jpg')) {
-        return null;
-    }
 
-    try {
-        const response = await fetch(imgUrl);
-        const blob = await response.blob();
-
-        return new Promise((resolve, reject) => {
-            const img = new Image();
-            img.onload = () => {
-                let canvas;
-                if (typeof OffscreenCanvas !== 'undefined') {
-                    canvas = new OffscreenCanvas(img.naturalWidth, img.naturalHeight);
-                } else {
-                    canvas = document.createElement('canvas');
-                }
-                const ctx = canvas.getContext('2d');
-
-                let width = img.naturalWidth;
-                let height = img.naturalHeight;
-
-                if (width > maxWidth) {
-                    height = Math.round(height * (maxWidth / width));
-                    width = maxWidth;
-                }
-
-                canvas.width = width;
-                canvas.height = height;
-                ctx.drawImage(img, 0, 0, width, height);
-
-                if (typeof OffscreenCanvas !== 'undefined') {
-                    canvas.convertToBlob({ type: 'image/webp', quality: quality })
-                        .then(compressedBlob => {
-                            const reader = new FileReader();
-                            reader.onloadend = () => resolve(reader.result);
-                            reader.onerror = reject;
-                            reader.readAsDataURL(compressedBlob);
-                        })
-                        .catch(error => {
-                            console.error('Lỗi khi convertOffscreenCanvasToBlob to WebP:', error);
-                            reject(null);
-                        });
-                } else {
-                    resolve(canvas.toDataURL('image/webp', quality));
-                }
-            };
-            img.onerror = (error) => {
-                console.error('Lỗi khi tải ảnh:', imgUrl, error);
-                reject(null);
-            };
-            img.src = URL.createObjectURL(blob);
-        });
-    } catch (error) {
-        console.error('Lỗi khi fetch hoặc xử lý ảnh:', imgUrl, error);
-        return null;
-    }
-}
 
 function getFullUrl(relativeUrl) {
     return relativeUrl ? new URL(relativeUrl, baseUrl).href : null;
@@ -64,7 +6,7 @@ function getFullUrl(relativeUrl) {
 
 
 
-async function detail() {
+async function run() {
     const bookDetailData = {};
 
     // 1. Tên truyện và Đường dẫn truyện (URL của trang hiện tại)
@@ -201,6 +143,6 @@ async function detail() {
     }
     bookDetailData.similarBooks = similarBooks;
 
-    const finalJsonData = JSON.stringify(bookDetailData);
-    sendToApp('response_json', buildJsonMessage('DETAIL', finalJsonData, 'action'));
+    const jsonData = JSON.stringify(chapterData);
+    window.flutter_inappwebview.callHandler(NAME_RESPONSE_JS_CALL_HANDLER, jsonData);
 }
