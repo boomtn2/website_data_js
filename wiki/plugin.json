@@ -10,17 +10,53 @@
         "type": "novel"
     },
     "tasks": {
-        "chapter": "chapter.json",
-        "detail": "detail.json",
-        "login": "login.json",
-        "search": "search.json",
-        "genre": "genre.json"
+        "chapter": {
+            "json": "chapter.json",
+            "js": [
+                "chap.js"
+            ]
+        },
+        "detail": {
+            "json": "detail.json",
+            "js": [
+                "detail.js"
+            ]
+        },
+        "search": {
+            "json": "search.json",
+            "js": [
+                "home.js"
+            ]
+        }
     },
     "synchronized": {
-        "check_type": "check_type.js",
-        "url_search": "url_search.js",
-        "url_fill": "fill.js",
-        "next_page": "next_page.js"
+        "check_type": [
+            "check_type.js"
+        ],
+        "url_search": [
+            "url_search.js"
+        ],
+        "url_fill": [
+            "fill.js"
+        ],
+        "next_page": [
+            "next_page.js"
+        ]
     },
-    "default_value": "default_value.js"
+    "category": "/data/categories.json",
+    "fill": "/data/fill.json",
+    "custom_tasks": {
+        "login": {
+            "json": "login.json",
+            "js": [
+                "/cookie/get_cookie.js",
+                "/cookie/set_cookie.js"
+            ]
+        }
+    },
+    "default_value": {
+        "js": [
+            "default_value.js"
+        ]
+    }
 }
