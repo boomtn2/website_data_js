@@ -1,4 +1,5 @@
 async function run() {
+try{
     const bookItems = document.querySelectorAll('.book-item');
     const results = [];
     const baseUrl = window.location.origin;
@@ -27,5 +28,10 @@ async function run() {
     }
 
     const jsonData = JSON.stringify(results);
-    window.flutter_inappwebview.callHandler(NAME_RESPONSE_JS_CALL_HANDLER, jsonData);
+    window.flutter_inappwebview.callHandler('RESPONSE', jsonData);
+    }catch(e)
+    {
+             window.flutter_inappwebview.callHandler('ERROR',JSON.stringify(e));
+
+    }
 }

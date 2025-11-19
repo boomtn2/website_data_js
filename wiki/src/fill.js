@@ -1,19 +1,12 @@
-function modifyUrl(url, changes = {}) {
-    const parsed = new URL(url);
-    const params = parsed.searchParams;
+function fill(url) {
+    // Chuyển list thành object { key: value }
+    const obj = {};
+    list.forEach(item => {
+      const key = Object.keys(item)[0];
+      const value = item[key];
+      obj[key] = value;
+    });
 
-    for (const [key, value] of Object.entries(changes)) {
-        if (value === null) params.delete(key);
-        else params.set(key, value);
-    }
-
-    return parsed.toString();
-}
-
-
-function fill(url, key) {
-    const obj = JSON.parse(key);
-
-    let responseString = modifyUrl(url, obj);
-    sendToApp('response_json', buildJsonMessage('URL', ensureString(responseString), 'action'));
-}
+    const responseString = modifyUrl(url, obj);
+    return responseString;
+  }

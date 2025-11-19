@@ -4,7 +4,8 @@ function decodeCookieValue(value) {
 }
 
 function run() {
-    const targetCookie = cookies.find(c => c.name === "express.sid");
+try {
+    const targetCookie = window.appCookie.find(c => c.name === "express.sid");
 
     let obj = [{
         "url": "https://truyenwikidich.net",
@@ -17,6 +18,12 @@ function run() {
         "httpOnly": true,
         "expirationDate": targetCookie['expirationDate'],
     },];
+        window.flutter_inappwebview.callHandler('COOKIE', JSON.stringify(obj));
 
-    window.flutter_inappwebview.callHandler(NAME_SET_COOKIE_JS_CALL_HANDLER, JSON.stringify(obj));
+}catch(e)
+{
+         window.flutter_inappwebview.callHandler("ERROR",JSON.stringify(e));
+
+}
+
 }

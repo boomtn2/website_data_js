@@ -1,12 +1,13 @@
 
 
 function getFullUrl(relativeUrl) {
-    return relativeUrl ? new URL(relativeUrl, baseUrl).href : null;
+    return relativeUrl ? new URL(relativeUrl, BASE_URL).href : null;
 }
 
 
 
 async function run() {
+try{
     const bookDetailData = {};
 
     // 1. Tên truyện và Đường dẫn truyện (URL của trang hiện tại)
@@ -143,6 +144,12 @@ async function run() {
     }
     bookDetailData.similarBooks = similarBooks;
 
-    const jsonData = JSON.stringify(chapterData);
-    window.flutter_inappwebview.callHandler(NAME_RESPONSE_JS_CALL_HANDLER, jsonData);
+    const jsonData = JSON.stringify(bookDetailData);
+    window.flutter_inappwebview.callHandler('RESPONSE', jsonData);
+
+    }catch(e)
+    {
+             window.flutter_inappwebview.callHandler('ERROR',JSON.stringify(e));
+
+    }
 }

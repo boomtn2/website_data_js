@@ -1,5 +1,6 @@
 
 function run() {
+    try{
     const chapterData = {};
 
     // Tiêu đề chương: phần tử p.book-title thứ 2 (nếu có)
@@ -44,5 +45,11 @@ function run() {
 
 
     const jsonData = JSON.stringify(chapterData);
-    window.flutter_inappwebview.callHandler(NAME_RESPONSE_JS_CALL_HANDLER, jsonData);
+    window.flutter_inappwebview.callHandler('RESPONSE', jsonData);
+
+    }catch(e)
+    {
+             window.flutter_inappwebview.callHandler('ERROR',JSON.stringify(e));
+
+    }
 }

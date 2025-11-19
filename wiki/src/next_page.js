@@ -7,4 +7,6 @@ function nextPage(url, page) {
         url: modifyUrl(url, { start: page * pageMax }),
         max: 20
     };
+
+    return responseString;
 }
