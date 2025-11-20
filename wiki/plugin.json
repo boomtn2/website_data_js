@@ -13,19 +13,22 @@
         "chapter": {
             "json": "chapter.json",
             "js": [
-                "chap.js"
+                "chap.js",
+                "load_url.js"
             ]
         },
         "detail": {
             "json": "detail.json",
             "js": [
-                "detail.js"
+                "detail.js",
+                "load_url.js"
             ]
         },
         "search": {
             "json": "search.json",
             "js": [
-                "home.js"
+                "home.js",
+                "load_url.js"
             ]
         }
     },

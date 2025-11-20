@@ -3,10 +3,10 @@
         "id": "wiki",
         "name": "wikitruyendich",
         "website": "https://truyenwikidich.net",
-        "icon": "wiki/icon.png",
+        "icon": "https://github.com/boomtn2/website_data_js/raw/main/wiki/icon.png",
         "detail": "Wiki dịch - Truyện miễn phí hán việt.",
         "language": "vi",
         "source": "https://github.com/boomtn2/website_data_js/raw/main/wiki/wiki.zip",
-        "version": 3
+        "version": 4
     }
 ]

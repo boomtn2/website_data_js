@@ -1,5 +1,13 @@
 [
     {
+        "js": "load_url",
+        "title": "Tạo URL",
+        "timeOut": 0,
+        "skipError": false,
+        "canUserAction": false,
+        "type": "now"
+    },
+    {
         "js": "detail",
         "title": "Lấy nội dung mô tả truyện",
         "timeOut": 0,
