@@ -6,7 +6,7 @@
         "icon": "wiki/icon.png",
         "detail": "Wiki dịch - Truyện miễn phí hán việt.",
         "language": "vi",
-        "source": "https://github.com/boomtn2/website_data_js/raw/refs/heads/main/wiki/wiki.zip",
+        "source": "https://github.com/boomtn2/website_data_js/raw/main/wiki/wiki.zip",
         "version": 3
     }
 ]
